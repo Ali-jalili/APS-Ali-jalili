@@ -1,0 +1,640 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.continer{
+    max-width: 85rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+/* My Menu*/
+
+.My-Menu{
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: -0.5rem;
+    background-color: #ffff;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: 22%;
+    z-index: 9999;
+}
+
+.menu a{
+    color: #314862;
+    font-size: 20px;
+   
+}
+
+.menu li:hover{
+    color: #064ea1;
+}
+
+.menu li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #064ea1;
+    display: block;
+    margin: auto ;
+    transition: all 0.5s;
+}
+
+.menu li:hover::after{
+    width: 100%;
+
+}
+
+.btn{
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #8db5e4;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+    transition: 0.3s;
+    margin-right: 6.5rem;
+   
+}
+
+.btn i{
+    margin-right: 28px;
+}
+
+.btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
+}
+
+
+.logo img{
+    width: 25%;
+}
+
+/* Description */
+
+.Description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.Box-left img{
+    width: 100%;
+}
+
+.Box-right h1{
+    font-size: 25px;
+    line-height: 2.5rem;
+}
+
+.Box-right p{
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.article{
+    margin-top: 5rem;
+}
+
+.article p{
+    padding: 20px 0;
+    font-size: 23px;
+    line-height: 40px;
+}
+
+
+/* Main */ 
+
+.main{
+    margin-top: 5rem;
+}
+
+.main h2{
+    text-align: center;
+    font-size: 35px;
+    margin: 5rem;
+}
+
+/* Products */ 
+
+.Products-Laotop{
+    display: flex;
+    align-items: center;
+}
+
+
+.shoping-card{
+    text-align: center;
+    box-shadow: 0  2px 8px 3px #666 ;
+    margin: 10px ;
+    border-radius: 5px;
+    padding: 10px;
+    width: 25%;
+    margin-top: 5rem;
+}
+
+
+.imag-sec .img-product{
+   width: 80%;
+   height: 50%;
+   border-radius: 5px;
+   
+}
+
+
+
+.stars{
+   color:#FFA000;
+   
+}
+
+.title{
+    color:#757575;
+    margin: 15px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+    padding: 5px 15px;
+}
+
+.buttons .right{
+    font-weight: bold;
+    color: #757575;
+}
+
+
+
+.buttons .left{
+    margin:5px;
+    
+}
+
+.left .extend {
+    margin: 10px;
+    background-color: #26C6DA;
+    border-radius: 25px;
+    padding: 7px;
+    width: 88%;
+    transition: all 0.5s;
+    font-size: 15px;
+}
+
+.left .extend a{
+    color: #fff;
+ }
+ 
+ .left .extend .icon{
+     color: #E53935;
+ }
+ 
+
+ .extend:hover{
+    background-color:#1565C0;
+    transform: scale(1.1);
+
+}
+
+.Products-Phon, .Products-Laotop, .Products-Headphon{
+display: flex;
+z-index: -999;
+}
+
+
+.Products-Phon .imag-sec img{
+    width: 30%;
+}
+
+.Products-Headphon .imag-sec{
+ width: 180px;
+ margin: 0 auto;
+}
+
+/* Discounts */ 
+
+.Discounts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.Discounts-text h3{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 25px;
+}
+
+.special-discount {
+    display: flex; 
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 #757575;
+    width: 80rem;
+    margin-top: 4rem;
+    height: 25rem;
+}
+
+
+.special-discount img{
+    width: 20%;   
+    border-radius: 5px;
+}
+
+.span{
+  display: block;
+}
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text h2{
+    border-bottom: 2px solid #000;
+    margin-top: 2rem;
+}
+
+.text span{
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.text .span1{
+    text-decoration-line: line-through;
+}
+
+.text .span2{
+    background-color: #E53935;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.text i{
+    font-size: 25px;
+    margin-top: 0.5rem;
+}
+
+/* About-Us */
+
+.about-us{
+   
+    margin-top: 5rem;
+    border-radius: 5px;
+    margin-bottom: 6rem;
+    padding: 10px 20px;
+}
+
+.div-text p{
+   
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.My-Box-left, .My-Box-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.My-Box-left .text-title h3{
+   font-size: 20px;
+}
+
+.My-Box-right .text-title h3{
+    font-size: 20px;
+    text-align: right;
+ }
+
+.My-Box-left .text-title p{
+    font-size: 15px;
+    line-height: 30px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.My-Box-right .text-title p{
+    font-size: 15px;
+    line-height: 30px;
+    width: 50%;
+    margin-top: 10px;
+    text-align: right;
+    margin-left: 32rem;
+}
+
+
+.My-Box-left img{
+    width: 50%;
+}
+
+.My-Box-right img{
+    width: 50%;
+}
+
+/* Warehouse status */
+
+.Warehouse{
+    margin-top: 5rem;
+}
+
+table caption{
+ background-color:#1f3375;
+ color:#fff;
+ padding:5px;
+ border-top:2px solid black;
+ border-right:2px solid black;
+ border-left:2px solid black;
+ border-radius:10px 10px 0 0;
+ font-size: 25px;
+}
+
+table{
+    border-collapse:collapse;
+    width: 100%;
+}
+
+table td, th{
+    border:1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #71e2f1;
+    font-size: 18px;
+    
+}
+
+
+/* Footer */
+
+.footer{
+ background-color: #1565C0;
+    border-radius: 5rem 5rem 0 0; 
+    margin-top: 5rem;
+}
+
+.footer-container{
+    display: grid;
+    gap: 2rem;
+}
+
+.footer-container{
+   display: flex;
+    padding: 4.5rem 0 -2rem;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.footer-container h2{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.footer-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box h3{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-box a{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #ffff;
+}
+
+.footer-box a:hover{
+    color: #153151;
+}
+
+.social a:hover{
+    color: #153151;
+}
+
+.social a{
+    font-size: 20px;
+    margin-right: 1rem;
+    color: #fff;
+}
+
+.Copyright{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+     
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:1200px) {
+
+    .menu{
+        width: 160%;
+        margin-right: 20%;
+    }
+
+    .left .extend{
+        font-size: 13px;
+    }
+
+    .special-discount{
+        width: 44rem;
+    }
+
+    .text h2{
+        font-size: 20px;
+    }
+
+    .text span{
+        font-size: 16px;
+    }
+
+    .special-discount img{
+        height: 47%;
+        width: 20%;
+    }
+    
+} 
+
+@media screen and (max-width:1000px){
+    .left .extend a:first-child{
+        display: none;
+       
+    }
+
+    
+
+
+}
+
+
+
+
+@media screen and (max-width:992px){
+    .left .extend{
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width:885px){
+
+    .menu{
+        width: 200%;
+        margin-right: 17%;
+    }
+    .left .extend{
+        font-size: 11px;
+    }
+
+    .Box-right h1{
+        font-size: 20px;
+
+    }
+
+    .Box-left img {
+        width: 97%;
+    }
+
+    .Products-Laotop, .Products-Headphon, .Products-Phon {
+        display: flex;
+        z-index: -999;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width:721px){
+    .menu{
+        width: 400%;
+        margin-right: 17%;
+        
+    }
+
+    .Products-Laotop, .Products-Phon, .Products-Headphon{
+        display: flex;
+        flex-direction: column;
+        width: 80rem;
+        margin: 0 auto;
+        
+    }
+
+    .Products-Laotop{
+        margin-left: -18rem;
+    }
+
+
+
+    .Products-Phon, .Products-Headphon{
+        margin-left: 12rem;
+        width: 80rem;
+    } 
+
+    .My-Box-right .text-title p{
+        margin-left: 280px;
+    }
+
+}
+
+
+@media screen and (max-width:700px){
+    .menu{
+        display: none;
+    }
+
+    .article p{
+        font-size: 18px;
+    }
+
+    table{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    table caption{
+        font-size: 20px;
+    }
+
+    table th{
+        font-size: 15px;
+    }
+
+    table td{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .Description{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .special-discount{
+        width: 35rem;
+    }
+
+    .text h2{
+        font-size: 15px;
+    }
+
+    .text span{
+        font-size: 14px;
+    }
+
+    .special-discount img{
+        height: 42%;
+        width: 25%;
+    
+}
+
+}
+
